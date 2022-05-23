@@ -13,7 +13,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { InfoComponent } from './home/info/info.component';
 import { LadingStoryComponent } from './home/lading-story/lading-story.component';
 import { SloganComponent } from './home/slogan/slogan.component';
-import { MapsComponent } from './home/maps/maps.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { TittlePageComponent } from './home/tittle-page/tittle-page.component';
 import { HistoryComponent } from './home/history/history.component';
@@ -32,7 +31,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     InfoComponent,
     LadingStoryComponent,
     SloganComponent,
-    MapsComponent,
     FooterComponent,
     TittlePageComponent,
     HistoryComponent,
