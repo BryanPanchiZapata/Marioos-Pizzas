@@ -132,11 +132,15 @@
     line-height: 2.2rem;
   }
   .animated-title > div div {
-    font-size: 4.6rem;
-    padding: 6vmin 0;
+    font-size: 3.8rem;
+    padding: 1vmin 0 0 0;
     position: absolute;
+  }
+  .animated-title > div.text-top div span:first-child {
+    padding-bottom: 1.6rem;
   }
   .animated-title > div.text-bottom div {
     font-size: 2.1rem;
+    line-height: 30px;
   }
 }

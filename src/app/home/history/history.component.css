@@ -94,4 +94,7 @@ img {
   .container__text p:nth-child(2) {
     width: 90%;
   }
+  .container__vision img {
+    height: 40%;
+  }
 }

@@ -54,12 +54,13 @@
 }
 .animated-title > div div {
   font-size: 4.5rem;
-  padding: 3vmin 0;
+  padding: 5vmin 0;
   position: absolute;
 }
 .animated-title > div div span {
   display: block;
   font-size: 3.9rem;
+  text-align: center;
 }
 
 .animated-title > div.text-top div {
@@ -105,7 +106,6 @@
 }
 .container__social__img img {
   width: 26px;
-
   padding: 0 0.7rem;
 }
 
@@ -120,7 +120,10 @@
     justify-content: center;
     gap: 2rem;
   }
-
+  .animated-title > div div span:nth-child(2) {
+    font-size: 2.7rem;
+    text-align: center;
+  }
   p:nth-child(3) {
     font-size: 2.5rem;
   }
