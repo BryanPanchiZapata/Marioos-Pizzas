@@ -1,0 +1,244 @@
+.container {
+  background-image: url(../../../assets/pizza3.jpg);
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  display: flex;
+}
+
+.container__text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  font-weight: bold;
+  gap: 2rem;
+  width: 90%;
+  font-size: 3.6rem;
+}
+
+.container__menu {
+  background-image: url(../../../assets/fondo.png);
+  height: 100%;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+.container__text__menu {
+  width: 90%;
+  margin: 0 auto;
+}
+.container__menu__tittle p:first-child {
+  color: #ffff;
+  font-size: 3rem;
+  padding: 5rem 0 1rem 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container__menu__tittle p:nth-child(2) {
+  color: #ffff;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 30px;
+  width: 60%;
+  margin: 0 auto;
+  font-family: Oxygen;
+  color: #d6d6bc;
+}
+
+.container__list__menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+  justify-content: space-evenly;
+}
+
+.container__img {
+  text-align: center;
+  width: 40%;
+}
+img {
+  width: 100%;
+}
+.list__menu {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+  gap: 1.5rem;
+  color: white;
+  width: 60%;
+}
+.list__menu p:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.list__menu p:nth-child(2) {
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+}
+.list__menu p:last-of-type {
+  font-size: 1rem;
+  color: #8aa8a9;
+}
+
+hr {
+  border: 1px dashed #ffff;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.container__text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  font-weight: bold;
+  gap: 2rem;
+  width: 90%;
+  font-size: 3.6rem;
+}
+
+@keyframes showTopText {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes showBottomText {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animated-title {
+  color: #fff;
+  width: 90%;
+  font-family: Roboto, Arial, sans-serif;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  padding: 1rem 0;
+}
+.animated-title > div {
+  height: 55%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 3rem;
+  padding: 3vmin 0;
+  position: absolute;
+  line-height: 2.3rem;
+}
+.animated-title > div div span {
+  display: block;
+  font-size: 3.9rem;
+  color: #e16434;
+}
+
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #fff;
+  padding-bottom: 2rem;
+}
+
+.container__img img {
+  animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes twist-up {
+  to {
+    transform: rotateX(360deg);
+  }
+}
+.container__social {
+  font-size: 1rem;
+  border-radius: 2rem;
+  background: #25d366;
+  padding: 0.8rem 1rem;
+  top: 35rem;
+  right: 1.4rem;
+  position: fixed;
+  z-index: 20;
+}
+.container__social a {
+  text-decoration: none;
+  color: #ffff;
+}
+.container__social__img {
+  display: flex;
+  align-items: center;
+}
+.container__social__img img {
+  width: 26px;
+
+  padding: 0 0.7rem;
+}
+
+.container__social:hover {
+  background: #06be4a;
+}
+
+@media screen and (max-width: 820px) {
+  .container__text {
+    font-size: 2.4rem;
+  }
+  .container__img {
+    text-align: center;
+    width: 60%;
+  }
+  .list__menu {
+    width: 90%;
+  }
+  .animated-title > div div span {
+    font-size: 2.4rem;
+  }
+  .animated-title > div.text-top div span:first-child {
+    padding-bottom: 0.3rem;
+  }
+  .container__menu__tittle p:nth-child(2) {
+    width: 90%;
+  }
+  .container__menu__tittle p:first-child {
+    line-height: 48px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .container__list__menu {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,40 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class="nav__ul">
+      <div class="nav__logo">
+        <a href="#"
+          ><img
+            class="logo"
+            src="../../../assets/marios.jpg"
+            alt="Marios Pizzas"
+        /></a>
+      </div>
+      <div class="nav__menu">
+        <li class="active"><a href="#">Inicio</a></li>
+        <li class="active"><a [routerLink]="['/history']">Marioo´s Pizzas</a></li>
+        <li class="active"><a [routerLink]="['/menu']">Menú</a></li>
+      </div>
+    </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container
+    class="example-sidenav-container"
+    [style.marginTop.px]="mobileQuery.matches ? 62 : 0"
+  >
+    <mat-sidenav
+      #snav
+      [mode]="mobileQuery.matches ? 'over' : 'side'"
+      [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="62"
+    >
+      <mat-nav-list>
+        <li class="active"><a mat-list-item href="#">Inicio</a></li>
+        <li><a mat-list-item [routerLink]="['/history']">Marios Pizzas</a></li>
+        <li><a mat-list-item [routerLink]="['/menu']">Menú</a></li>
+      </mat-nav-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
+</div>

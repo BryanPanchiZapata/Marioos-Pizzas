@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="container__text">
+    <div class="animated-title">
+      <div class="text-top">
+        <div>
+          <span>{{ menu.tittle }}</span>
+          <span>{{ menu.tittle1 }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="container__social">
+      <div class="container__social__img">
+        <a target="_blank" href="https://wa.me/593989985596"
+          ><img src="../../../assets/what.png" alt=""
+        /></a>
+        <a target="_blank" href="https://wa.me/593989985596"
+          >PIDE POR WHATSAPP</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container__menu">
+  <div class="container__text__menu">
+    <div class="container__menu__tittle">
+      <p>{{ menu.tittle_menu }}</p>
+      <p>{{ menu.descripcion_menu }}</p>
+    </div>
+    <div class="container__list__menu">
+      <div class="container__img">
+        <img src="../../../assets/woolly-pizza-1.png" alt="Chef" />
+      </div>
+      <div class="list__menu">
+        <div class="container__description" *ngFor="let list of listmenu">
+          <p>{{ list.tittle_menu }}</p>
+          <p>{{ list.description_menu }}</p>
+          <p>{{ list.price_menu }}</p>
+          <hr />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
