@@ -235,6 +235,9 @@ hr {
   .container__menu__tittle p:first-child {
     line-height: 48px;
   }
+  .container__social {
+    top: 40rem;
+  }
 }
 
 @media screen and (max-width: 920px) {

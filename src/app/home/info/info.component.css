@@ -112,7 +112,6 @@
 }
 .container__social__img img {
   width: 26px;
-
   padding: 0 0.7rem;
 }
 
@@ -142,5 +141,8 @@
   .animated-title > div.text-bottom div {
     font-size: 2.1rem;
     line-height: 30px;
+  }
+  .container__social {
+    top: 40rem;
   }
 }
