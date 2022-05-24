@@ -166,8 +166,9 @@ hr {
 }
 .animated-title > div.text-top div span:first-child {
   color: #fff;
-  padding-bottom: 2rem;
+  padding-bottom: 2.2rem;
 }
+
 
 .container__img img {
   animation: spin 4s infinite linear;
@@ -204,7 +205,6 @@ hr {
 }
 .container__social__img img {
   width: 26px;
-
   padding: 0 0.7rem;
 }
 
@@ -227,7 +227,7 @@ hr {
     font-size: 2.4rem;
   }
   .animated-title > div.text-top div span:first-child {
-    padding-bottom: 0.3rem;
+
   }
   .container__menu__tittle p:nth-child(2) {
     width: 90%;
